@@ -1,9 +1,12 @@
 package demo;
 
+import demo.gui.PokemonBuilderScreen;
+
 public class PokemonBattleSimulatorApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		PokemonBuilderScreen testScreen = new PokemonBuilderScreen();
 
 	}
 

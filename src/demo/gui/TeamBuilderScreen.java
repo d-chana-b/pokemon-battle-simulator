@@ -8,7 +8,7 @@ public class TeamBuilderScreen {
 	
 	JFrame frame = new JFrame();
 	HeaderPanel headerPanel = new HeaderPanel();
-	RightPanel rightPanel = new RightPanel();
+	LeftPanel rightPanel = new LeftPanel();
 	MainPanel mainPanel = new MainPanel();
 	PokemonBuilderPanel pokemonBuilderPanel = new PokemonBuilderPanel();
 	

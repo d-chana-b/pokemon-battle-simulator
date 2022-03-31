@@ -4,22 +4,20 @@ import java.util.ArrayList;
 
 import demo.model.Move;
 import demo.model.Pokemon;
-import demo.model.move.*; //import all the move in the move package
+import demo.model.move.*;
 
-public class Arbok extends Pokemon {
+public class Pikachu extends Pokemon {
 
-	private final int baseHP = 60, baseAtk = 85, baseDef = 69, baseSpAtk = 65, baseSpDef = 79, baseSpeed = 80;
+	private final int baseHP = 35, baseAtk = 55, baseDef = 30, baseSpAtk = 50, baseSpDef = 40, baseSpeed = 90;
 
 	private ArrayList<Move> levelUpMoves;
 
-	public Arbok() {
+	public Pikachu() {
 		super();
-		this.setName("Arbok");
 		levelUpMoves = new ArrayList<>();
-		this.levelUpMoves.add(new Tackle());
-		this.levelUpMoves.add(new Bite());
-		this.levelUpMoves.add(new IceFang());
-		this.levelUpMoves.add(new GunkShot());
+		levelUpMoves.add(new Tackle());
+		this.setName("Pikachu");
+
 	}
 
 	public ArrayList<Move> getLevelUpMoves() {

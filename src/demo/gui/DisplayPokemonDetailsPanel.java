@@ -44,6 +44,7 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 		GridBagConstraints gbc = new GridBagConstraints();
 
 		gbc.weighty = 1;
+		//gbc.weightx = 2;
 
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 0;

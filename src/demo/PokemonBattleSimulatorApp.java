@@ -1,12 +1,13 @@
 package demo;
 
-import demo.gui.PokemonBuilderScreen;
+
+import demo.gui.TeamBuilderScreen;
 
 public class PokemonBattleSimulatorApp {
 
 	public static void main(String[] args) {
 		
-		PokemonBuilderScreen testScreen = new PokemonBuilderScreen();
+		TeamBuilderScreen testScreen = new TeamBuilderScreen();
 
 	}
 

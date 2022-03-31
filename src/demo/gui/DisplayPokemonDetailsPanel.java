@@ -43,25 +43,31 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 
 		GridBagConstraints gbc = new GridBagConstraints();
 
-		//gbc.weighty = 1;
+		gbc.weighty = 1;
+
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 0;
 		gbc.gridy = 0;
 		this.add(pokemonDropDown, gbc);
 
-		gbc.weightx = 0.5;
+		
+		
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		this.add(pokemonLabel, gbc);
 
-		gbc.weightx = 0.5;
+		
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 1;
 		gbc.gridy = 1;
 		this.add(moveSlotPanel, gbc);
 
+		gbc.gridwidth = 2;
 		gbc.gridx = 0;
 		gbc.gridy = 2;
 		this.add(miscPanel, gbc);
 
+		
 		gbc.gridx = 0;
 		gbc.gridy = 3;
 		this.add(misc2Panel, gbc);

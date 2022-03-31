@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class StatsPanel extends JPanel {
 
-	JLabel bHP, bAtk, bDef, bSpAtk, bSpDef, bSpeed;
+	public static JLabel bHP, bAtk, bDef, bSpAtk, bSpDef, bSpeed;
 	JLabel mHP, mAtk, mDef, mSpAtk, mSpDef, mSpeed;
 	JTextField hpIV, atkIV, defIV, spAtkIV, spDefIV, speedIV;
 	JTextField hpEV, atkEV, defEV, spAtkEV, spDefEV, speedEV;
@@ -42,12 +42,12 @@ public class StatsPanel extends JPanel {
 		mSpDef = new JLabel("999",JLabel.CENTER);
 		mSpeed = new JLabel("999",JLabel.CENTER);
 
-		hpIV = new JTextField();
-		atkIV = new JTextField();
-		defIV = new JTextField();
-		spAtkIV = new JTextField();
-		spDefIV = new JTextField();
-		speedIV = new JTextField();
+		hpIV = new JTextField("31");
+		atkIV = new JTextField("31");
+		defIV = new JTextField("31");
+		spAtkIV = new JTextField("31");
+		spDefIV = new JTextField("31");
+		speedIV = new JTextField("31");
 		hpEV = new JTextField();
 		atkEV = new JTextField();
 		defEV = new JTextField();

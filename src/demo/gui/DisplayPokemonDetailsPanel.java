@@ -9,14 +9,14 @@ import java.util.ArrayList;
 
 import javax.swing.*;
 
+import demo.gamelogic.contoller.PokemonDetailsController;
 import demo.list.Generation1List;
 import demo.model.Pokemon;
 
 public class DisplayPokemonDetailsPanel extends JPanel {
 
-	JComboBox pokemonDropDown;
-	JLabel pokemonLabel;
-	ImageIcon pokemonIcon;
+	public static JComboBox pokemonDropDown;
+	public static JLabel pokemonLabel;
 	MovePanel moveSlotPanel;
 	StatsPanel statsPanel;
 	LevalAndGenderPanel miscPanel;
@@ -32,7 +32,7 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 		misc2Panel = new AbilityAndNaturePanel();
 
 		pokemonLabel = new JLabel();
-		pokemonIcon = new ImageIcon("image/sprites/resize/pokeball.png");
+		ImageIcon pokemonIcon = new ImageIcon("image/sprites/resize/pokeball.png");
 		pokemonLabel.setBackground(Color.blue);
 		pokemonLabel.setOpaque(true);
 		pokemonLabel.setIcon(pokemonIcon);
@@ -46,19 +46,19 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 		gbc.weighty = 1;
 		//gbc.weightx = 2;
 
-		gbc.fill = GridBagConstraints.HORIZONTAL;
+		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 0;
 		gbc.gridy = 0;
 		this.add(pokemonDropDown, gbc);
 
 		
-		
+		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		this.add(pokemonLabel, gbc);
 
 		
-		gbc.fill = GridBagConstraints.HORIZONTAL;
+		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.gridx = 1;
 		gbc.gridy = 1;
 		this.add(moveSlotPanel, gbc);
@@ -77,6 +77,9 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 		gbc.gridx = 0;
 		gbc.gridy = 4;
 		this.add(statsPanel, gbc);
+		
+		new PokemonDetailsController();
+		
 
 	}
 

@@ -17,6 +17,7 @@ public class Pikachu extends Pokemon {
 		levelUpMoves = new ArrayList<>();
 		levelUpMoves.add(new Tackle());
 		this.setName("Pikachu");
+		
 
 	}
 

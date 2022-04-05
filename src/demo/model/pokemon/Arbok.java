@@ -15,6 +15,12 @@ public class Arbok extends Pokemon {
 	public Arbok() {
 		super();
 		this.setName("Arbok");
+		this.setBaseHP(baseHP);
+		this.setBaseHP(baseAtk);
+		this.setBaseHP(baseDef);
+		this.setBaseHP(baseSpAtk);
+		this.setBaseHP(baseSpDef);
+		this.setBaseHP(baseSpeed);
 		levelUpMoves = new ArrayList<>();
 		this.levelUpMoves.add(new Tackle());
 		this.levelUpMoves.add(new Bite());

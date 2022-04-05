@@ -4,13 +4,17 @@ public class Pokemon {
 
 	// basic properties
 	private String name, type1, type2, ability1, ability2, hiddenAbility, heldItem;
-	private int HP, atk, def, spAtk, spDef, speed;
-	private String gender;
+	private int HP, atk, def, spAtk, spDef, speed; // max stats na ito pre
+	private int baseHP, baseAtk, baseDef, baseSpAtk, baseSpDef, baseSpeed;
 
 	// misc properties
 	private double weight;
 	private int happiness;
 
+	//user define properties
+	private String gender, ability, nature;
+	private int level;
+	
 	// for user define moveset
 	Move move1 = new Move();
 	Move move2 = new Move();
@@ -125,6 +129,55 @@ public class Pokemon {
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
+	
+	public int getBaseHP() {
+		return baseHP;
+	}
+
+	public void setBaseHP(int baseHP) {
+		this.baseHP = baseHP;
+	}
+
+	public int getBaseAtk() {
+		return baseAtk;
+	}
+
+	public void setBaseAtk(int baseAtk) {
+		this.baseAtk = baseAtk;
+	}
+
+	public int getBaseDef() {
+		return baseDef;
+	}
+
+	public void setBaseDef(int baseDef) {
+		this.baseDef = baseDef;
+	}
+
+	public int getBaseSpAtk() {
+		return baseSpAtk;
+	}
+
+	public void setBaseSpAtk(int baseSpAtk) {
+		this.baseSpAtk = baseSpAtk;
+	}
+
+	public int getBaseSpDef() {
+		return baseSpDef;
+	}
+
+	public void setBaseSpDef(int baseSpDef) {
+		this.baseSpDef = baseSpDef;
+	}
+
+	public int getBaseSpeed() {
+		return baseSpeed;
+	}
+
+	public void setBaseSpeed(int baseSpeed) {
+		this.baseSpeed = baseSpeed;
+	}
+
 
 	public String getGender() {
 		return gender;
@@ -132,6 +185,30 @@ public class Pokemon {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public String getAbility() {
+		return ability;
+	}
+
+	public void setAbility(String ability) {
+		this.ability = ability;
+	}
+
+	public String getNature() {
+		return nature;
+	}
+
+	public void setNature(String nature) {
+		this.nature = nature;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
 	}
 
 	public double getWeight() {

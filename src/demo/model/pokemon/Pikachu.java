@@ -14,11 +14,15 @@ public class Pikachu extends Pokemon {
 
 	public Pikachu() {
 		super();
+		this.setName("Pikachu");
+		this.setBaseHP(baseHP);
+		this.setBaseHP(baseAtk);
+		this.setBaseHP(baseDef);
+		this.setBaseHP(baseSpAtk);
+		this.setBaseHP(baseSpDef);
+		this.setBaseHP(baseSpeed);
 		levelUpMoves = new ArrayList<>();
 		levelUpMoves.add(new Tackle());
-		this.setName("Pikachu");
-		
-
 	}
 
 	public ArrayList<Move> getLevelUpMoves() {

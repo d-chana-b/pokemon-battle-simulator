@@ -9,9 +9,9 @@ import javax.swing.*;
 public class StatsPanel extends JPanel {
 
 	public static JLabel bHP, bAtk, bDef, bSpAtk, bSpDef, bSpeed;
-	JLabel mHP, mAtk, mDef, mSpAtk, mSpDef, mSpeed;
-	JTextField hpIV, atkIV, defIV, spAtkIV, spDefIV, speedIV;
-	JTextField hpEV, atkEV, defEV, spAtkEV, spDefEV, speedEV;
+	public static JLabel mHP, mAtk, mDef, mSpAtk, mSpDef, mSpeed;
+	public static JTextField hpIV, atkIV, defIV, spAtkIV, spDefIV, speedIV;
+	public static JTextField hpEV, atkEV, defEV, spAtkEV, spDefEV, speedEV;
 
 	public StatsPanel() {
 		super();
@@ -48,12 +48,12 @@ public class StatsPanel extends JPanel {
 		spAtkIV = new JTextField("31");
 		spDefIV = new JTextField("31");
 		speedIV = new JTextField("31");
-		hpEV = new JTextField();
-		atkEV = new JTextField();
-		defEV = new JTextField();
-		spAtkEV = new JTextField();
-		spDefEV = new JTextField();
-		speedEV = new JTextField();
+		hpEV = new JTextField("0");
+		atkEV = new JTextField("0");
+		defEV = new JTextField("0");
+		spAtkEV = new JTextField("0");
+		spDefEV = new JTextField("0");
+		speedEV = new JTextField("0");
 
 		this.add(stats);
 		this.add(hp);

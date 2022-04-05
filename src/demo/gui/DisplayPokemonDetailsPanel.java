@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 import demo.gamelogic.contoller.PokemonDetailsController;
-import demo.list.Generation1List;
+import demo.list.PokemonList;
 import demo.model.Pokemon;
 
 public class DisplayPokemonDetailsPanel extends JPanel {
@@ -39,7 +39,9 @@ public class DisplayPokemonDetailsPanel extends JPanel {
 		pokemonLabel.setText("Pokemon Name");
 		pokemonLabel.setHorizontalTextPosition(JLabel.CENTER);
 		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
-		pokemonDropDown = new JComboBox(new Generation1List().getPokemonList().toArray());
+		
+		ArrayList<Pokemon> list = new PokemonList().getPokemonList();
+		pokemonDropDown = new JComboBox(new PokemonList().getPokemonNames(list).toArray());
 
 		GridBagConstraints gbc = new GridBagConstraints();
 

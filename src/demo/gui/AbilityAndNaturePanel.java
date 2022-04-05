@@ -9,7 +9,7 @@ public class AbilityAndNaturePanel extends JPanel {
 
 	JComboBox genderDropDown;
 	JComboBox abilityDropDown;
-	JComboBox natureDropDown;
+	public static JComboBox natureDropDown;
 
 	public AbilityAndNaturePanel() {
 		super();

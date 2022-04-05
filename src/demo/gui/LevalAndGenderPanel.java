@@ -8,7 +8,7 @@ import javax.swing.*;
 public class LevalAndGenderPanel extends JPanel {
 
 	JComboBox genderDropDown;
-	JTextField levelField;
+	public static JTextField levelField;
 	
 	public LevalAndGenderPanel() {
 		super();
